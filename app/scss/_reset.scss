@@ -22,8 +22,8 @@ html{
   h5,
   h6,
   p,
-  ul[class],
-  ol[class],
+  ul,
+  ol,
   li,
   figure,
   figcaption,
@@ -34,7 +34,7 @@ html{
   }
   
   ul[class] {
-    list-style: none;
+    list-style: none;    
   }
   
   img {
