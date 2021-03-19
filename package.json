@@ -19,6 +19,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
+    "rateyo": "^2.3.2",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {}
