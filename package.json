@@ -9,15 +9,21 @@
   "author": "Mihail Gavrilenko",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
+    "jquery-form-styler": "^2.0.2",
+    "rateyo": "^2.3.2",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {}

@@ -17,8 +17,8 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px;
+  margin: 0 auto; 
 }
 
 a {
@@ -26,3 +26,129 @@ a {
   color: $default;
   @extend %quicksand-500;    
 }
+
+.title {
+text-align: center;
+@extend %roboto-700;
+font-size: 48px;
+line-height: 65px;
+color: $title;
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+
+.text {
+  text-align: center;
+  max-width: 570px;
+  margin: 0 auto 55px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 25px;
+  position: relative;
+  flex-wrap: wrap;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/icons/home-icon.svg');
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 4px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    color:#727272;
+    padding-right: 40px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/angle-right.svg');
+      width: 9px;
+      height: 10px;
+      right: 15px;
+      top: 9px;
+    }
+    &:last-child{
+      color: $accent;
+      padding-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+  }  
+}
+
+.header--404-page {
+  background-color: $bg; 
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  .pagination__list {
+    display: flex;
+    padding: 0 35px;
+  }
+  &__item {
+    padding: 0 15px;
+  }
+  &__link--active {
+    color: $accent;
+  }
+  &__arrows {
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      top: 8px;
+    }
+  }
+  &__prev {
+    padding-left: 15px;
+    &::before{
+      background-image: url('../images/icons/angle_left.svg');
+      left: 0;
+    }
+  }
+  &__next {
+    padding-right: 15px;
+    &::before{
+      background-image: url('../images/icons/angle_right.svg');
+      right: 0;
+    }
+  }
+}
+
+@media (max-width:620px)  {
+
+  .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+}
+
+@media (max-width:375px)  {
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+}
+
+

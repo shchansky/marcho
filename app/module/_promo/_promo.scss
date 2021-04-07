@@ -1,0 +1,112 @@
+.promo {
+    background-image: url('../images/promo-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 160px;
+    text-align: center;
+    &__inner {
+        max-width: 570px;
+        width: 100%;
+        margin-left: auto;
+    }
+    &__subtitle {
+        color: $accent;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 22px; 
+    }
+    &__clock {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55px;
+    }
+    &__clock-item {
+        background-color: #fff;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        span {
+            font-size: 48px;
+            @extend %roboto-700;
+            margin-bottom: 7px;
+            color: $title;
+        }
+    }
+    &__link {
+        text-transform: uppercase;
+        color: $title;
+        display: inline-block;
+        border: 1px solid $accent;
+        padding: 14px 27px;
+        margin-top: 55px;
+    }
+}
+
+.partners {
+    padding-top: 75px;
+    &__list {
+        height: 170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .promo {
+        padding: 60px 0;
+        &__clock {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__clock-item {
+            margin: 20px 33px;
+        }
+    }
+    .partners {
+        padding: 60px 0;
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+            height: auto;
+        }
+        &__item {
+            margin: 10px 35px;
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+    .partners {
+        &__item {
+            margin: 10px 21px;
+        }
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    .promo {  
+        &__clock {
+            margin-top: 30px;
+        }
+        &__clock-item {
+            margin: 8px;
+        }
+        &__link {
+
+        }
+    }
+    .partners {
+        &__item {
+            margin: 10px 25px;
+        }
+    }
+}
