@@ -50,3 +50,8 @@
         margin-bottom: 25px;
     }
 }
+@media (max-width: 375px) {
+    .modal__link {
+        margin: 0 20px;
+    }
+}
